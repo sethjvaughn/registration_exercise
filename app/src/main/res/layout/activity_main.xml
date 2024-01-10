@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/regTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="#FF00BCD4"
+            android:text="REGISTRATION"
+            android:textColor="@color/white"
+            android:textSize="40sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:orientation="horizontal">
+
+            <TextView
+               style="@style/tvOne"
+                android:drawableTop="@drawable/phone_icon"
+                android:text="Use mobile to reg.">
+
+            </TextView>
+
+            <View style="@style/vline" />
+
+            <TextView
+                style="@style/tvOne"
+                android:drawableTop="@drawable/google_icon"
+                android:text="Use Google to reg.">
+
+            </TextView>
+        </LinearLayout>
+
+        <View style="@style/hline" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="18dp">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/mail_icon">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/emailTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Use E-mail to reg."
+                android:textColor="@color/white"
+                android:textSize="25sp">
+
+            </TextView>
+        </LinearLayout>
+
+        <View style="@style/hline" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/tvTwo"
+                android:text="Name:">
+
+            </TextView>
+
+            <EditText
+                style="@style/etOne"
+                android:id="@+id/name_et"
+                android:hint="Please input Name"/>
+
+        </LinearLayout>
+
+        <View style="@style/hline" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/tvTwo"
+                android:text="E-mail:">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/email_et"
+                style="@style/etOne"
+                android:hint="Please input Email">
+
+            </EditText>
+
+        </LinearLayout>
+
+        <View style="@style/hline" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/tvTwo"
+                android:text="Password:">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/password_et"
+                style="@style/etOne"
+                android:hint="Please input Password"
+                android:inputType="textPassword"></EditText>
+
+        </LinearLayout>
+
+        <View style="@style/hline" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/tvTwo"
+                android:text="Gender:">
+            </TextView>
+
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="50dp">
+
+                <RadioButton
+                    android:id="@+id/rb_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:textSize="20sp">
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/rb_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:textSize="20sp">
+                </RadioButton>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <View style="@style/hline" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                style="@style/tvTwo"
+                android:text="Hobbies:">
+
+            </TextView>
+
+            <CheckBox
+                android:id="@+id/cb_sing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Singing"
+                android:layout_marginLeft="20dp"
+                android:textSize="15sp" />
+
+            <CheckBox
+                android:id="@+id/cb_dance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dancing"
+                android:textSize="15sp">
+
+            </CheckBox>
+
+            <CheckBox
+                android:id="@+id/cb_read"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reading"
+                android:textSize="15sp">
+
+            </CheckBox>
+
+
+
+        </LinearLayout>
+
+        <View style="@style/hline"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:background="#FF00BCD4"
+        android:layout_alignParentBottom="true"
+        android:text="SUBMIT">
+    </Button>
+
+</RelativeLayout>

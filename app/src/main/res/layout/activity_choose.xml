@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/chooseTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="#FF00BCD4"
+            android:text="Choose an option:"
+            android:textColor="@color/white"
+            android:textSize="45sp" />
+
+        <LinearLayout
+            android:layout_marginTop="200dp"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:orientation="horizontal">
+
+<!--            <View style="@style/hline" />-->
+
+            <TextView
+                android:id="@+id/shopping_tv"
+                style="@style/tvOne"
+                android:drawableTop="@drawable/shop_icon"
+                android:text="Go shopping!">
+
+            </TextView>
+
+
+            <View style="@style/vline" />
+
+            <TextView
+                android:id="@+id/browsing_tv"
+                style="@style/tvOne"
+                android:drawableTop="@drawable/image_icon"
+                android:text="Go Browsing!">
+
+            </TextView>
+        </LinearLayout>
+
+        <View style="@style/hline" />
+
+    </LinearLayout>
+
+</RelativeLayout>
